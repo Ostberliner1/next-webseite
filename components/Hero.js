@@ -20,33 +20,31 @@ export default function Hero() {
     ">
 
       {/* --- Anpassungen hier in <nav> --- */}
+          // --- Zurück zu justify-between HIER ---
       <nav className="container
         mx-auto         {/* Zentriert die Navigationsleiste */}
         flex             {/* Aktiviert Flexbox */}
         items-center     {/* Zentriert Elemente vertikal */}
-        justify-start    {/* Startet Elemente links (Korrekt) */}
-        gap-x-8          {/* NEU: Fügt Abstand zwischen Titel und Link-Liste hinzu */}
-        /* mb-16 entfernt oder reduziert, falls zu viel Abstand nach unten */
-        /* ml-10 entfernt, container mx-auto sollte reichen */
+        justify-between  {/* WICHTIG: Erstes Kind links, Letztes Kind rechts */}
+        /* gap-x-* entfernt, da justify-between den Abstand regelt */
+        /* mb-16 oder andere Abstände nach Bedarf anpassen */
         px-4 md:px-0    {/* Evtl. Padding für kleinere Screens */}
       ">
-        {/* Titel */}
+        {/* Titel (bleibt das erste Kind) */}
         <div className="
           text-2xl
           font-bold
-          whitespace-nowrap /* Verhindert Umbruch des Titels */
+          whitespace-nowrap
         ">
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
-        {/* Link-Liste direkt als Kind von nav */}
-        {/* Der unnötige div-Wrapper wurde entfernt */}
+        {/* Link-Liste (ist das letzte Kind und wird nach rechts geschoben) */}
         <ul className="flex space-x-6 text-2xl"> {/* space-x-6 für Abstand ZWISCHEN den Links */}
           <li>
-             {/* EMPFEHLUNG: Auch hier Link verwenden, wenn es eine interne Seite ist */}
             <Link href="/shop" legacyBehavior>
               <a className="
-                hover:text-blue-500
+                hover:text-blue-500 /* Farbe vielleicht anpassen */
                 transition-colors
                 duration-150"
               >
