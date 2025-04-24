@@ -35,7 +35,7 @@ export default function Hero() {
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-6 text-2xl">
           <li>
             <a
               href="/shop"
