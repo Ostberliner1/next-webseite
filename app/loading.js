@@ -7,7 +7,7 @@ export default function Loading() {
         bg-white
                              /* Vertikales Padding beibehalten */
            /* --- Hintergrundbild-Klassen für DIESE Sektion --- */
-           hover:bg-[url('/wolf2.avif')] /* Pfad zu deinem spezifischen Bild */
+           hover:bg-[url('/aequitas.jpeg')] /* Pfad zu deinem spezifischen Bild */
            
            bg-center                 /* Bild zentrieren */
            bg-repeat              /* Nicht kacheln */

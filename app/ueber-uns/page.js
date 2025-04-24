@@ -13,7 +13,7 @@ export default function Home() {
         bg-white
                              /* Vertikales Padding beibehalten */
            /* --- Hintergrundbild-Klassen für DIESE Sektion --- */
-           bg-[url('/wolf2.avif')] /* Pfad zu deinem spezifischen Bild */
+           bg-[url('/aequitas.jpeg')] /* Pfad zu deinem spezifischen Bild */
            
            bg-center                 /* Bild zentrieren */
            bg-repeat              /* Nicht kacheln */
@@ -39,15 +39,24 @@ export default function Home() {
           width={500}
           height={500}
         />
+        <div className="
+        bg-gradient-to-r from-black to-red-600
+        rounded-full
+        text-yellow-500
+        py-20
+        px-20
+        ml-200
+        mr-200">
         <h1
           className="
-        text-blue-900"
+        "
         >
           Streaming ohne deutsche Grenzen
         </h1>
         <p>Bist du Älter als 18?</p>
         <p>Dann bist du hier genau richtig</p>
         <br />
+        </div>
       </div>
 
       <Link

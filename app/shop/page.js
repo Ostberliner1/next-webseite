@@ -8,11 +8,12 @@ export default function Home() {
   return (
     <div
       className="
+      
    mx-auto px-4 relative z-10
         bg-white
                              /* Vertikales Padding beibehalten */
            /* --- Hintergrundbild-Klassen für DIESE Sektion --- */
-           bg-[url('/wolf2.avif')] /* Pfad zu deinem spezifischen Bild */
+           bg-[url('/aequitas.jpeg')] /* Pfad zu deinem spezifischen Bild */
            
            bg-center                 /* Bild zentrieren */
            bg-repeat              /* Nicht kacheln */
@@ -90,13 +91,27 @@ export default function Home() {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <iframe className="
-        mr-40
-        ml-60"
-          width="1275"
-          height="717"
+        <iframe
+          className="
+        ml-30"
+          width="1100"
+          height="800"
           src="https://www.youtube.com/embed/g9-zUnmmYHw"
           title="Kool Savas, AZAD - All 4 One (Videoclip)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <br />
+        <iframe className="
+        ml-100
+        
+        "
+          width="1100"
+          height="800"
+          src="https://www.youtube.com/embed/J2CbalASVH8"
+          title="Sleipnir   Wunderbare Jahre"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"

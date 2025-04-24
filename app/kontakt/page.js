@@ -10,7 +10,7 @@ export default function Home() {
         bg-white
                              /* Vertikales Padding beibehalten */
            /* --- Hintergrundbild-Klassen für DIESE Sektion --- */
-           bg-[url('/wolf2.avif')] /* Pfad zu deinem spezifischen Bild */
+           bg-[url('/aequitas.jpeg')] /* Pfad zu deinem spezifischen Bild */
            
            bg-center                 /* Bild zentrieren */
            bg-repeat              /* Nicht kacheln */

@@ -28,10 +28,11 @@ export default function Hero() {
       mb-16
       ">
         <div className="
-        text-2xl()
+        text-2xl
         font-bold
+        
         ">
-            DEIN MUSIK STREAMINGDIENST
+            DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
         <ul className="flex space-x-6">
@@ -73,21 +74,29 @@ export default function Hero() {
 
       <div className="text-center">
         <h1 className="
-        text-4xl
+        text-8xl
         md:text-5xl
         font-bold
         mb-4
         text-yellow-500
+        
+        rounded-full
+        px-7
+        py-12
+        ml-170
+        mr-170
+        bg-gradient-to-r from-black to-red-600
         ">
-          KOSTENLOSE MUSIK
+          AEQUITAS VERITAS
         </h1>
         <p className="text-lg
-        md:text-xl
+        md:text-4xl
         mb-8
         max-w-2xl
         mx-auto
-        text-red-500">
-          MUSIK-REVOLUTION
+        text-white-500
+        font-bold">
+          KUNST, IST DIE FREIHEIT ALLES ZU SAGEN
         </p>
         <Button
           buttonText="JETZT STREAMEN4FREE"
