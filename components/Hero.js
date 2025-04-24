@@ -19,18 +19,15 @@ export default function Hero() {
     /* text-center wurde entfernt, da die Nav links sein soll */
     ">
 
-      {/* --- Anpassungen hier in <nav> --- */}
-          // --- Zurück zu justify-between HIER ---
       <nav className="container
         mx-auto         {/* Zentriert die Navigationsleiste */}
         flex             {/* Aktiviert Flexbox */}
         items-center     {/* Zentriert Elemente vertikal */}
-        justify-between  {/* WICHTIG: Erstes Kind links, Letztes Kind rechts */}
-        /* gap-x-* entfernt, da justify-between den Abstand regelt */
-        /* mb-16 oder andere Abstände nach Bedarf anpassen */
-        px-4 md:px-0    {/* Evtl. Padding für kleinere Screens */}
+        /* justify-between oder justify-start entfernt */
+        px-4 md:px-0    {/* Padding für kleinere Screens */}
+        h-16             {/* Beispiel: Feste Höhe für die Navigationsleiste */}
       ">
-        {/* Titel (bleibt das erste Kind) */}
+        {/* Titel (bleibt links) */}
         <div className="
           text-2xl
           font-bold
@@ -39,12 +36,12 @@ export default function Hero() {
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
-        {/* Link-Liste (ist das letzte Kind und wird nach rechts geschoben) */}
-        <ul className="flex space-x-6 text-2xl"> {/* space-x-6 für Abstand ZWISCHEN den Links */}
+        {/* Link-Liste: ml-auto hinzugefügt */}
+        <ul className="flex space-x-6 text-2xl ml-auto"> {/* NEU: ml-auto hinzugefügt */}
           <li>
             <Link href="/shop" legacyBehavior>
               <a className="
-                hover:text-blue-500 /* Farbe vielleicht anpassen */
+                hover:text-blue-500
                 transition-colors
                 duration-150"
               >
@@ -79,21 +76,20 @@ export default function Hero() {
       </nav>
       {/* --- Ende der <nav> Anpassungen --- */}
 
-
-      {/* Hero Content */}
-      <div className="text-center pt-16"> {/* Etwas Abstand nach oben für den Inhalt */}
-        <h1 className="
+      {/* Hero Content (zentriert) */}
+      <div className="text-center pt-16"> {/* Abstand nach oben */}
+         {/* ... Rest des Hero-Inhalts ... */}
+         <h1 className="
           text-8xl
-          md:text-5xl /* md:text-5xl ist kleiner als 8xl, vielleicht umgekehrt? */
+          md:text-5xl
           font-bold
           mb-4
           text-yellow-500
           rounded-full
           px-7
           py-12
-          mx-auto /* Zentriert die H1, wenn sie eine feste Breite hätte, oder nutze text-center auf parent */
-          max-w-3xl /* Beispiel: Begrenze Breite und zentriere mit mx-auto */
-          /* ml-170, mr-170 sind ungültig -> nutze mx-auto oder Padding/Margin */
+          mx-auto
+          max-w-3xl
           bg-gradient-to-r from-black to-red-600
         ">
           AEQUITAS VERITAS
@@ -103,7 +99,7 @@ export default function Hero() {
           mb-8
           max-w-2xl
           mx-auto
-          text-white /* KORREKTUR: text-white statt text-white-500 */
+          text-white
           font-bold">
           KUNST, IST DIE FREIHEIT ALLES ZU SAGEN
         </p>
