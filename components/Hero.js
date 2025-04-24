@@ -23,9 +23,12 @@ export default function Hero() {
 
       <nav className="container
       mx-auto flex
-      justify-between
+      justify-start
       items-center
       mb-16
+      ml-10
+      
+      
       ">
         <div className="
         text-2xl
@@ -35,7 +38,8 @@ export default function Hero() {
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
-        <ul className="flex space-x-6 text-2xl">
+        <div className="mr-100">
+          <ul className="flex space-x-6 text-2xl">
           <li>
             <a
               href="/shop"
@@ -70,6 +74,7 @@ export default function Hero() {
             </Link>
           </li>
         </ul>
+        </div>
       </nav>
 
       <div className="text-center">

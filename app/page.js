@@ -58,11 +58,11 @@ export default async function HomePage() {
           "
           >
             <FeatureCard
-              title="ROCK"
+              title="ROCK, METAL"
               description="FÜR DIE ROCK'N ROLLER UNTER EUCH."
             />
-            <FeatureCard title="HIP HOP" description="MUSIK VON DER STRASSE." />
-            <FeatureCard title="R&B" description="R&B." />
+            <FeatureCard title="HIP HOP, RAP" description="MUSIK VON DER STRASSE." />
+            <FeatureCard title="R&B, REGGAE, SOUL" description="R&B." />
           
           </div>
           <div></div>
