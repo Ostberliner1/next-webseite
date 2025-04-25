@@ -34,6 +34,12 @@ export default function Hero() {
           whitespace-nowrap
                    
         ">
+          <img
+        src="/goodfellas.svg" // Pfad zur Datei im public-Ordner
+        alt="Goodfellas Icon" // WICHTIG: Alternativtext beschreibt das Icon
+        className="w-15 h-15" // Größe des Icons mit Tailwind setzen (z.B. 6 entspricht 1.5rem oder 24px)
+                           // Füge weitere Tailwind-Klassen hinzu, falls nötig
+      />
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 

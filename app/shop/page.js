@@ -39,7 +39,7 @@ export default function Home() {
       >
         <iframe
           className="
-        px-5"
+        "
           width="300"
           height="300"
           src="https://www.youtube.com/embed/effqopL8SnM"
@@ -51,7 +51,7 @@ export default function Home() {
         ></iframe>
         <iframe
           className="
-        px-5"
+        "
           width="300"
           height="300"
           src="https://www.youtube.com/embed/mWczgMuqCEU"
@@ -93,9 +93,10 @@ export default function Home() {
         ></iframe>
         <iframe
           className="
-        ml-30"
-          width="1100"
-          height="800"
+        
+        "
+          width="300"
+          height="300"
           src="https://www.youtube.com/embed/g9-zUnmmYHw"
           title="Kool Savas, AZAD - All 4 One (Videoclip)"
           frameborder="0"
@@ -105,11 +106,13 @@ export default function Home() {
         ></iframe>
         <br />
         <iframe className="
-        ml-100
+        
+        
+        
         
         "
-          width="1100"
-          height="800"
+          width="300"
+          height="300"
           src="https://www.youtube.com/embed/J2CbalASVH8"
           title="Sleipnir   Wunderbare Jahre"
           frameborder="0"
