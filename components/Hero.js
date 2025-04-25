@@ -32,12 +32,14 @@ export default function Hero() {
           text-2xl
           font-bold
           whitespace-nowrap
+                   
         ">
             DEIN FREIER MUSIK STREAMINGDIENST
         </div>
 
         {/* Link-Liste: ml-auto hinzugefügt */}
         <ul className="flex space-x-6 text-2xl ml-auto"> {/* NEU: ml-auto hinzugefügt */}
+          
           <li>
             <Link href="/shop" legacyBehavior>
               <a className="
